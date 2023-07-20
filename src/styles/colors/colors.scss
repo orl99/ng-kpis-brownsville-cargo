@@ -1,0 +1,229 @@
+/** ngic CSS Variables **/
+
+:root {
+    /** primary **/
+    --ng-color-primary: #3880ff;
+    --ng-color-primary-rgb: 56, 128, 255;
+    --ng-color-primary-selected: rgba(var(--ng-color-primary-rgb), 0.14);
+    --ng-color-primary-contrast: #ffffff;
+    --ng-color-primary-contrast-rgb: 255, 255, 255;
+    --ng-color-primary-shade: #3171e0;
+    --ng-color-primary-tint: #4c8dff;
+    /** secondary **/
+    --ng-color-secondary: #3dc2ff;
+    --ng-color-secondary-rgb: 61, 194, 255;
+    --ng-color-secondary-contrast: #ffffff;
+    --ng-color-secondary-contrast-rgb: 255, 255, 255;
+    --ng-color-secondary-shade: #36abe0;
+    --ng-color-secondary-tint: #50c8ff;
+    /** tertiary **/
+    --ng-color-tertiary: #5260ff;
+    --ng-color-tertiary-rgb: 82, 96, 255;
+    --ng-color-tertiary-contrast: #ffffff;
+    --ng-color-tertiary-contrast-rgb: 255, 255, 255;
+    --ng-color-tertiary-shade: #4854e0;
+    --ng-color-tertiary-tint: #6370ff;
+    /** success **/
+    --ng-color-success: #2dd36f;
+    --ng-color-success-rgb: 45, 211, 111;
+    --ng-color-success-contrast: #ffffff;
+    --ng-color-success-contrast-rgb: 255, 255, 255;
+    --ng-color-success-shade: #28ba62;
+    --ng-color-success-tint: #42d77d;
+    /** warning **/
+    --ng-color-warning: #ffc409;
+    --ng-color-warning-rgb: 255, 196, 9;
+    --ng-color-warning-contrast: #000000;
+    --ng-color-warning-contrast-rgb: 0, 0, 0;
+    --ng-color-warning-shade: #e0ac08;
+    --ng-color-warning-tint: #ffca22;
+    /** danger **/
+    --ng-color-danger: #eb445a;
+    --ng-color-danger-rgb: 235, 68, 90;
+    --ng-color-danger-contrast: #ffffff;
+    --ng-color-danger-contrast-rgb: 255, 255, 255;
+    --ng-color-danger-shade: #cf3c4f;
+    --ng-color-danger-tint: #ed576b;
+    /** dark **/
+    --ng-color-dark: #222428;
+    --ng-color-dark-rgb: 34, 36, 40;
+    --ng-color-dark-contrast: #ffffff;
+    --ng-color-dark-contrast-rgb: 255, 255, 255;
+    --ng-color-dark-shade: #1e2023;
+    --ng-color-dark-tint: #383a3e;
+    /** medium **/
+    --ng-color-medium: #92949c;
+    --ng-color-medium-rgb: 146, 148, 156;
+    --ng-color-medium-contrast: #ffffff;
+    --ng-color-medium-contrast-rgb: 255, 255, 255;
+    --ng-color-medium-shade: #808289;
+    --ng-color-medium-tint: #9d9fa6;
+    /** light **/
+    --ng-color-light: #f4f5f8;
+    --ng-color-light-rgb: 244, 245, 248;
+    --ng-color-light-contrast: #000000;
+    --ng-color-light-contrast-rgb: 0, 0, 0;
+    --ng-color-light-shade: #d7d8da;
+    --ng-color-light-tint: #f5f6f9;
+    // shodows
+    --callout-shadow-color: rgba(0, 0, 0, .4)
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+/*
+ * Dark Colors
+ * -------------------------------------------
+ */
+
+body.color-scheme-dark {
+    --ng-color-primary: #428cff;
+    --ng-color-primary-rgb: 66, 140, 255;
+    --ng-color-primary-selected: rgba(var(--ng-color-primary-rgb), 0.14);
+    --ng-color-primary-contrast: #ffffff;
+    --ng-color-primary-contrast-rgb: 255, 255, 255;
+    --ng-color-primary-shade: #3a7be0;
+    --ng-color-primary-tint: #5598ff;
+    --ng-color-secondary: #50c8ff;
+    --ng-color-secondary-rgb: 80, 200, 255;
+    --ng-color-secondary-contrast: #ffffff;
+    --ng-color-secondary-contrast-rgb: 255, 255, 255;
+    --ng-color-secondary-shade: #46b0e0;
+    --ng-color-secondary-tint: #62ceff;
+    --ng-color-tertiary: #6a64ff;
+    --ng-color-tertiary-rgb: 106, 100, 255;
+    --ng-color-tertiary-contrast: #ffffff;
+    --ng-color-tertiary-contrast-rgb: 255, 255, 255;
+    --ng-color-tertiary-shade: #5d58e0;
+    --ng-color-tertiary-tint: #7974ff;
+    --ng-color-success: #2fdf75;
+    --ng-color-success-rgb: 47, 223, 117;
+    --ng-color-success-contrast: #000000;
+    --ng-color-success-contrast-rgb: 0, 0, 0;
+    --ng-color-success-shade: #29c467;
+    --ng-color-success-tint: #44e283;
+    --ng-color-warning: #ffd534;
+    --ng-color-warning-rgb: 255, 213, 52;
+    --ng-color-warning-contrast: #000000;
+    --ng-color-warning-contrast-rgb: 0, 0, 0;
+    --ng-color-warning-shade: #e0bb2e;
+    --ng-color-warning-tint: #ffd948;
+    --ng-color-danger: #ff4961;
+    --ng-color-danger-rgb: 255, 73, 97;
+    --ng-color-danger-contrast: #ffffff;
+    --ng-color-danger-contrast-rgb: 255, 255, 255;
+    --ng-color-danger-shade: #e04055;
+    --ng-color-danger-tint: #ff5b71;
+    --ng-color-dark: #f4f5f8;
+    --ng-color-dark-rgb: 244, 245, 248;
+    --ng-color-dark-contrast: #000000;
+    --ng-color-dark-contrast-rgb: 0, 0, 0;
+    --ng-color-dark-shade: #d7d8da;
+    --ng-color-dark-tint: #f5f6f9;
+    --ng-color-medium: #989aa2;
+    --ng-color-medium-rgb: 152, 154, 162;
+    --ng-color-medium-contrast: #000000;
+    --ng-color-medium-contrast-rgb: 0, 0, 0;
+    --ng-color-medium-shade: #86888f;
+    --ng-color-medium-tint: #a2a4ab;
+    --ng-color-light: #222428;
+    --ng-color-light-rgb: 34, 36, 40;
+    --ng-color-light-contrast: #ffffff;
+    --ng-color-light-contrast-rgb: 255, 255, 255;
+    --ng-color-light-shade: #1e2023;
+    --ng-color-light-tint: #383a3e;
+}
+
+
+/*
+ * iOS Dark Theme
+ * -------------------------------------------
+ */
+
+// .ios body.color-scheme-dark {
+//     --ng-background-color: #000000;
+//     --ng-background-color-rgb: 0, 0, 0;
+//     --ng-text-color: #ffffff;
+//     --ng-text-color-rgb: 255, 255, 255;
+//     --ng-color-step-50: #0d0d0d;
+//     --ng-color-step-100: #1a1a1a;
+//     --ng-color-step-150: #262626;
+//     --ng-color-step-200: #333333;
+//     --ng-color-step-250: #404040;
+//     --ng-color-step-300: #4d4d4d;
+//     --ng-color-step-350: #595959;
+//     --ng-color-step-400: #666666;
+//     --ng-color-step-450: #737373;
+//     --ng-color-step-500: #808080;
+//     --ng-color-step-550: #8c8c8c;
+//     --ng-color-step-600: #999999;
+//     --ng-color-step-650: #a6a6a6;
+//     --ng-color-step-700: #b3b3b3;
+//     --ng-color-step-750: #bfbfbf;
+//     --ng-color-step-800: #cccccc;
+//     --ng-color-step-850: #d9d9d9;
+//     --ng-color-step-900: #e6e6e6;
+//     --ng-color-step-950: #f2f2f2;
+//     --ng-toolbar-background: #0d0d0d;
+//     --ng-item-background: #000000;
+// }
+
+/*
+ * Material Design Dark Theme - Default
+ * -------------------------------------------
+ */
+
+body.color-scheme-dark {
+    --ng-background-color: #121212;
+    --ng-background-color-rgb: 18, 18, 18;
+    --ng-text-color: #ffffff;
+    --ng-text-color-rgb: 255, 255, 255;
+    --ng-border-color: #222222;
+    --ng-color-step-50: #1e1e1e;
+    --ng-color-step-100: #2a2a2a;
+    --ng-color-step-150: #363636;
+    --ng-color-step-200: #414141;
+    --ng-color-step-250: #4d4d4d;
+    --ng-color-step-300: #595959;
+    --ng-color-step-350: #656565;
+    --ng-color-step-400: #717171;
+    --ng-color-step-450: #7d7d7d;
+    --ng-color-step-500: #898989;
+    --ng-color-step-550: #949494;
+    --ng-color-step-600: #a0a0a0;
+    --ng-color-step-650: #acacac;
+    --ng-color-step-700: #b8b8b8;
+    --ng-color-step-750: #c4c4c4;
+    --ng-color-step-800: #d0d0d0;
+    --ng-color-step-850: #dbdbdb;
+    --ng-color-step-900: #e7e7e7;
+    --ng-color-step-950: #f3f3f3;
+    --ng-item-background: #1e1e1e;
+    --ng-toolbar-background: #1f1f1f;
+    --ng-tab-bar-background: #1f1f1f;
+}
+
+
+/* Optngal CSS, this is added for the flashing that happens when toggling between themes */
+
+ng-item {
+    --transitng: none;
+}
+
+.depth-8 {
+    box-shadow: 0 3.2px 7.2px 0 rgba(0, 0, 0, .132), 0 0.6px 1.8px 0 rgba(0, 0, 0, .108);
+    ;
+}
+
+.depth-8-plus {
+    box-shadow: 0 3.2px 7.2px 0 var(--callout-shadow-color, rgba(0, 0, 0, .132)), 0 .6px 1.8px 0 var(--callout-shadow-secondary-color, rgba(0, 0, 0, .108));
+}

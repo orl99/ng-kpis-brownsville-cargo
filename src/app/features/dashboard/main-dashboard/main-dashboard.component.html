@@ -1,0 +1,188 @@
+<div class="main-dashboard-container depth-8 depth-8-plus padding-1">
+    <h2>Bienvenidad Alejandra!</h2>
+    <p>Tenemos tu reporte actualizado al momento</p>
+    <p>ultimo acceso 10 de junio 2020 14:11 hrs</p>
+</div>
+<section class="content-dashboard-container">
+    <div class="title-dashboard-container">
+        <h1>Graficas de tendencias KPI's</h1>
+        <h1>Direccion o Gerencia</h1>
+    </div>
+    <div class="select-dashboard-container">
+        <mat-form-field appearance="outline">
+            <mat-select placeholder="Lista de meses">
+                <ng-container *ngFor="let month of selectMonths">
+                    <mat-option [value]="month">{{month}}</mat-option>
+                </ng-container>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <section class="charts-cards-container">
+        <!-- Chart 1 -->
+        <div class="chart-card-container depth-8 depth-8-plus">
+            <div class="bmasc-card">
+                <h2>Entradas y Salidas - Anual</h2>
+                <div class="bmasc-card-content">
+                    <div class="chart-select-container">
+                        <mat-form-field appearance="outline">
+                            <mat-select placeholder="Lista de meses">
+                                <ng-container *ngFor="let month of selectMonths">
+                                    <mat-option [value]="month">{{month}}</mat-option>
+                                </ng-container>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="chart-border-container">
+                        <app-bmasc-charts [InLabels]="chartMockLabel" [InChartData]="chartMockData" [InLegend]="showLegend" InChartType="bar"></app-bmasc-charts>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Chart 1 -->
+        <!-- Chart 2 -->
+        <div class="chart-card-container depth-8 depth-8-plus">
+            <div class="bmasc-card">
+                <h2 class="bmasc-mb-20">
+                    Desglose de carga por
+                    <br> unidad de negocio del mes
+                </h2>
+                <div class="bmasc-card-content">
+                    <div class="chart-tab-container ">
+                        <mat-tab-group>
+                            <mat-tab label="Brownsville">
+                                <app-bmasc-charts [InChartData]="chart2MockDataPt1" [InLegend]="showLegend" InChartType="bar"></app-bmasc-charts>
+                            </mat-tab>
+                            <mat-tab label="laredo">
+                                <app-bmasc-charts [InChartData]="chart2MockDataPt2" [InLegend]="showLegend" InChartType="bar"></app-bmasc-charts>
+                            </mat-tab>
+                            <mat-tab label="EAGLE PASS">
+                                <app-bmasc-charts [InChartData]="chart2MockDataPt3" [InLegend]="showLegend" InChartType="bar"></app-bmasc-charts>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Chart 2 -->
+        <!-- Chart 3 -->
+        <!-- <div class="chart-card-container depth-8 depth-8-plus">
+            <div>
+                <h2 class="bmasc-mb-20">Desglose de Entradas a nivel Global</h2>
+                <div>
+                    <div class="chart-border-container">
+                        <app-bmasc-charts [InLabels]="chart3MockDataLabels" [InChartData]="chart3MockData" [InLegend]="showLegend" InChartType="pie"></app-bmasc-charts>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Chart 3 -->
+        <!-- Chart 4 -->
+        <!-- <div class="chart-card-container depth-8 depth-8-plus">
+            <div>
+                <h2 class="bmasc-mb-20">Linea de Tendencias en Carga</h2>
+                <div>
+                    <div class="chart-border-container">
+                        <app-bmasc-charts [InChartData]="chart4MockData" [InLegend]="showLegend" InChartType="line"></app-bmasc-charts>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Chart 4 -->
+        <!-- Chart 5 -->
+        <!-- <div class="chart-card-container depth-8 depth-8-plus">
+            <div>
+                <h2>Over Time Anual</h2>
+                <div>
+                    <div class="chart-select-container">
+                        <mat-form-field appearance="outline">
+                            <mat-select placeholder="Lista de meses">
+                                <ng-container *ngFor="let month of selectMonths">
+                                    <mat-option [value]="month">{{month}}</mat-option>
+                                </ng-container>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="chart-border-container">
+                        <app-bmasc-charts [InChartData]="chart5MockDataPt1" [InLegend]="showLegend" InChartType="bar"></app-bmasc-charts>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Chart 5 -->
+        <!-- Chart 6 -->
+        <!-- <div class="chart-card-container depth-8 depth-8-plus">
+            <div>
+                <h2 class="bmasc-mb-20">Over Time Mensual</h2>
+                <div>
+                    <div class="chart-border-container">
+                        <div class="chart-tab-container">
+                            <mat-tab-group class="over-time-tabs">
+                                <mat-tab label="Sem 1">
+                                    <app-bmasc-charts [InChartData]="chart6MockDataPt1" [InLegend]="showLegend" InChartType="bar"></app-bmasc-charts>
+                                </mat-tab>
+                                <mat-tab label="Sem 2">
+                                    <app-bmasc-charts [InChartData]="chart6MockDataPt2" [InLegend]="showLegend" InChartType="bar"></app-bmasc-charts>
+                                </mat-tab>
+                                <mat-tab label="Sem 3">
+                                    <app-bmasc-charts [InChartData]="chart6MockDataPt3" [InLegend]="showLegend" InChartType="bar"></app-bmasc-charts>
+                                </mat-tab>
+                                <mat-tab label="Sem 4">
+                                    <app-bmasc-charts [InChartData]="chart6MockDataPt3" [InLegend]="showLegend" InChartType="bar"></app-bmasc-charts>
+                                </mat-tab>
+                            </mat-tab-group>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Chart 6 -->
+        <!-- Semaforo Clientes -->
+        <!-- Component Proposal -->
+        <!-- <div class="chart-card-container depth-8 depth-8-plus">
+            <div>
+                <h2 class="bmasc-mb-20">Semaforo de Clientes</h2>
+                <div>
+                    <div class="chart-border-container">
+                        <div class="semaforo-component">
+                            <div class="semaforo-labels-container">
+                                <ul class="semaforo-ul">
+                                    <li class="semaforo-li-item">
+                                        <div class="semarofo-light-label-color semaforo-success"></div>
+                                        Excelente
+                                    </li>
+                                    <li class="semaforo-li-item">
+                                        <div class="semarofo-light-label-color semaforo-warning"></div>
+                                        Medio
+                                    </li>
+                                    <li class="semaforo-li-item ">
+                                        <div class="semarofo-light-label-color semaforo-dager"></div>
+                                        Mal
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="semaforo-lights-container">
+                                <div class="semaforo-lights-wraper">
+                                    <div class="semaforo-light-item">
+                                        <div class="semaforo-light-color semaforo-success"></div>
+                                        <span>Lala</span>
+                                    </div>
+                                    <div class="semaforo-light-item">
+                                        <div class="semaforo-light-color semaforo-warning"></div>
+                                        <span>Grupo SIC</span>
+                                    </div>
+                                    <div class="semaforo-light-item">
+                                        <div class="semaforo-light-color semaforo-dager"></div>
+                                        <span>CONAGRA</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Semaforo Clientes -->
+
+    </section>
+
+</section>
